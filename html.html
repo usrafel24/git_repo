@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    .h2{
+        background-color: red;
+      
+        
+
+    }
+</style>
+</head>
+<body>
+
+    <input list ="list">
+    <datalist id="list">
+        <option value="sura"></option>
+        <option value="delelegn"></option>
+        <option value="bizunesh"></option>
+        <option value="bamlak"></option>
+        
+
+
+
+    </datalist>
+
+<button class="btn"  >click</button>
+<h1 class="h1 h2">surafel</h1>
+
+
+
+<script>
+
+// let sura =document.querySelector('.btn')
+// let h1 =document.querySelector('.h2')
+// function suraa(){
+// h1.classList.add('h1')
+// console.log('clickd')
+
+// }
+
+// sura.addEventListener('click',suraa)
+
+// const arrayobj =new Map()
+// {
+// arrayobj.set('name','surafel')
+// }
+// arrayobj.set('age','21')
+// {
+// arrayobj.set('name','delelegn')
+// }
+// arrayobj.set('age','34')
+
+// // for(let key of arrayobj.keys()){
+// // console.log(arrayobj)
+// // }
+
+// for(let [key,value]of arrayobj){
+//     console.log(key,value)
+// }
+
+
+// const s=new Set()
+
+// s.add('surafel')
+// console.log(s.clear());
+
+// console.log(s.delete());
+
+// function start(){
+
+// console.log(`my name is ${this.name} i am ${this.age} years old my familys name is ${this.family}`)
+
+// }
+
+// const obj={
+
+// name:'surafel',
+// age:'21',
+// family:['bizunesh','delelegn','bamlack'],
+// start:start,
+
+// }
+
+// const obj2={
+
+// name:'bamlack',
+// age:'17',
+// family:['bizunesh','delelegn','surafel'],
+// start:start,
+
+// }
+
+// start.apply(obj2)
+// start.call(obj2)
+// obj.start()
+// obj2.start()
+
+// for(let key of Object.keys(obj2)){
+
+//     console.log(key,obj2[key]);
+// }
+
+
+const surafel =(name,lname,age,family)=>{
+    const obj ={}
+    obj.name =name;
+    obj.lname=lname;
+    obj.age =age;
+    obj.family =family
+
+    obj.start = function (){
+    return `${this.name} ${this.lname}`
+    }
+   return obj
+}
+let e=surafel('surafel','delelegn',23,['delelegn','bamlack','bizunesh']);
+console.log(e);
+
+
+
+    </script>
+</body>
+</html>
